@@ -1,0 +1,47 @@
+import javax.swing.*;
+import java.awt.*;
+class Main {
+    public static void main(String[] args) {
+        JFrame frame = mew JFrame("Chat Frame");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        
+        
+        //Menu Bar
+        JMenuBar mb = new JMenuBar();
+        JMenu file = new JMenu("File");
+        JMenu help = new JMenu("Help");
+        mb.add(file);
+        mb.add(help);
+        
+        //menu item
+        JMenuItem open = new JMenuItem("Open");
+        JMenuItem save = new JMenuItem("Save As");
+        // Add menu items to menu
+        file.add(open);
+        file.add(save);
+        
+        // create button, text field
+        //JButton,JTextField,JLable
+        JPanel panel = new JPanel();
+        JLable name = new JLable ("Enter Text")
+        JTextField tf = new JTextfield(12);
+        JButton send new JButton("Send");
+        JButton reset = new JButton("reset");
+        
+        //attach control to panel
+        panel.add(name);
+        panel.add(tf);
+        panel.add(send);
+        panel.add(reset);
+        
+        //size of window 
+        frame.setSize(400,400);
+        // border Layout
+    frame.getContentPanel().add(BorderLayout.NORTH,mb)    
+    frame.getContentPanel().add(BorderLayout.SOUTH,panel)   
+    frame.getContentPanel().add(BorderLayout.CENTER, txt)
+    
+        //set visible
+        frame.setVisible(true);
+    }
+}
